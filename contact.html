@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    
+    <nav id="desktop-nav">
+        <div class="logo">iTravel<span>aLOt</span></div> 
+        <div>
+          <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./aboutme.html">About Me</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav> 
+    
+      <nav id="hamburger-nav">
+        <div class="logo">d_Rahul</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span class="span"></span>
+            <span class="span"></span>
+            <span class="span"></span>
+          </div>
+        </div>
+        <div class="menu-links">
+          <li><a href="./index.html" onclick="toggleMenu()">Home</a></li>
+            <li><a href="./blog.html"  onclick="toggleMenu()">Blog</a></li>
+            <li><a href="./aboutme.html"  onclick="toggleMenu()">About Me</a></li>
+            <li><a href="./contact.html"  onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </nav>
+
+      <div class="contact-txt">
+        Contact Me
+      </div>
+
+
+      <div class="contact">
+        <div class="contact-img"><img src="./images/blog-8.jpg" alt=""></div>
+        <div class="contact-form">
+          <form action="">
+            <input type="text" placeholder="First Name" class="fname">
+            <input type="text" placeholder="Last Name" class="lname"><br>
+            <input type="email" name="" id="" placeholder="Email" class="email-contact"><br>
+            <input type="text" name="" id="" placeholder="Type your message here..." class="msg">
+          </form>
+          <button>Send It</button> 
+           
+           
+        </div>
+      </div>
+
+
+
+
+      <div class="footer-container">
+        <div class="footer-logo">Itravel<span>aLOt</span></div>
+      
+        <div class="footer">
+          <ul class="footer-links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./aboutme.html">About Me</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+       </div>
+      
+        <div class="footer">       
+          <div class="footer-text">
+            <p>Subscribe here to get the latest travel tips and my insider secrets</p>
+          </div>
+          <div class="footer-email">
+              <input type="email" name="" href="mailto:rahulkumar92959@gmail.com" id="" class="email" placeholder="Email">
+          </div>
+      
+           <div class="footer-btn">
+            <button>Subscribe</button>
+           </div>
+           
+        </div>
+      </div>
+      
+
+      <script>
+        function toggleMenu() {
+          const menu = document.querySelector(".menu-links");
+          const icon = document.querySelector(".hamburger-icon");
+          menu.classList.toggle("open");
+          icon.classList.toggle("open");
+        }
+      </script>
+
+</body>
+</html>

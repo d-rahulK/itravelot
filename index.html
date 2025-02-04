@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>ItravelaLot</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -11,109 +11,239 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <img src="https://cdn-icons-png.flaticon.com/128/3781/3781622.png" alt="logo" class="logo" width="70px" height="70px"/>
-    </header>
-    <nav class="navbar" id="navbar2">
-      <ul class="nav_links" id="nav_links2">
-         <input type="text" class="search" placeholder="Search...">
-         <i class="fa-solid fa-magnifying-glass"></i>
-         <li><i class="fa-solid fa-x fa-lg"></i></li>
-         <li><a href="#" class="links" id="links2">About Me</a></li>
-         <li><a href="#" class="links" id="links2">Work with Me</a></li>
-         <li><a href="#" class="links" id="links2">Contact</a></li>
-         <li><a href="#" class="links" id="links2" >Blog</a></li>
-      </ul>
+     <div class="loader"> 
+             <dotlottie-player src="https://lottie.host/7b019a6d-bb13-40a1-8839-ad9bc20039b7/PJj8IPMQe5.json" background="transparent" speed="1" style="width: 150px; height: 250px;" loop autoplay class="loader1"></dotlottie-player>  
+     </div>
 
-      <a href="#"  ><i class="fa-solid fa-bars fa-xl" id="ham"></i></a>
+    <div class="hide-page">
+
+
+    <nav id="desktop-nav">
+      <div class="logo">iTravel<span>aLOt</span></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./aboutme.html">About Me</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
     </nav>
-
+  
+    <nav id="hamburger-nav">
+      <div class="logo">iTravel<span>aLOt</span></div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span class="span"></span>
+          <span class="span"></span>
+          <span class="span"></span>
+        </div>
+      </div>
+      <div class="menu-links">
+        <li><a href="./index.html" onclick="toggleMenu()">Home</a></li>
+        <li><a href="./blog.html" onclick="toggleMenu()">Blog</a></li>
+        <li><a href="./aboutme.html" onclick="toggleMenu()">About Me</a></li>
+        <li><a href="./contact.html" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </nav>
+    
     <div class="container">
       <div class="p_info">
+        <div class="container-img"><img src="./images/kid-luffy-monkey-d-luffy-one-piece-anime-hd-wallpaper-preview.jpg" alt=""></div>
         <p class="cnt">Welcome!</p>
         <p class="ccnt">Join my Journey</p>
       </div>
     </div>
 
-
-
     <div class="hero">
       <p class="trend">Featured Post</p>
       <div class="img"></div>
       <div class="para">
-        <p class="time">Mar 22 . 2min</p>
-        <p class="p_txt">Top hikes in Australia</p>
-        <p  class="p_txt1">Many of the best bushwalks in Australia weave through World Heritage-listed wilderness areas.</p>
-      </div>
-      <hr class="hero1">
+        <div class="time"><p>Mar 22,2023 . 2min</p></div>
+        <div class="p_txt">Top hikes in Australia</div>
+        <div class="p_txt1">
+          Many of the best bushwalks in Australia weave through World
+          Heritage-listed wilderness areas.From the Larapinta Trail to Three Capes Track, here are the best hikes in Australia to let you explore the most beautiful regions.
+        </div>
+      <div><hr class="hero1" /></div>
+      <div class="hero-txt"><p>0 comments</p></div>
     </div>
-
-
+    </div>
 
     <div class="recent1"><p class="recent">Recent Posts</p></div>
 
     <div class="blog_con">
-      <div class="blog"><img src="./images/pexels-clau-oliveros-12322793.jpg" alt="" class="img1">
+      <div class="blog">
+        <img
+          src="./images/pexels-clau-oliveros-12322793.jpg"
+          alt=""
+          class="img1"
+        />
         <a href="#" class="blog1">Mexico: A Culionary Journey</a>
-      <div class="hr_blog1"></div>
-      <i class="fa-regular fa-message fa-sm">&nbsp;&nbsp;&nbsp;0</i>
-    </div>
+        <div class="hr_blog1"></div>
+        <i class="fa-regular fa-message fa-sm">&nbsp;&nbsp;&nbsp;0</i>
+      </div>
 
-      <div class="blog"><img src="./images/traveles.jpg" alt="" class="img2">
+      <div class="blog">
+        <img src="./images/traveles.jpg" alt="" class="img2" />
         <a href="#" class="blog2">5 Tips For Budget Travellers</a>
-        <div class="hr_blog2"></div>
+        <div class="hr_blog1"></div>
         <i class="fa-regular fa-message fa-sm">&nbsp;&nbsp;&nbsp;0</i>
       </div>
-      <div class="blog"><a href="#" class="blog3">Lessons From a Digital Nomads</a><p class="p_blog3">A digital nomad is someone who leverages technology and the internet to work remotely and more generally conduct their lifestyle in a nomadic manner.</p>
-        <div class="hr_blog3"></div>
+      <div class="blog">
+        <a href="#" class="blog3">Lessons From a Digital Nomads</a>
+        <p class="p_blog3">
+          A digital nomad is someone who leverages technology and the internet
+          to work remotely and more generally conduct their lifestyle in a
+          nomadic manner.
+        </p>
+        <div class="hr_blog1"></div>
         <i class="fa-regular fa-message fa-sm">&nbsp;&nbsp;&nbsp;0</i>
       </div>
-      <div class="blog"><img src="./images/dive.jpg" alt="" class="img4"><a href="#" class="blog4">The Amazing Diving Spots</a>
-        <div class="hr_blog2"></div>
+      <div class="blog">
+        <img src="./images/dive.jpg" alt="" class="img4" /><a
+          href="#"
+          class="blog4"
+          >The Amazing Diving Spots</a
+        >
+        <div class="hr_blog1"></div>
         <i class="fa-regular fa-message fa-sm">&nbsp;&nbsp;&nbsp;0</i>
       </div>
-      <div class="blog"><img src="./images/food (1).jpg" alt="" class="img5"><a href="#" class="blog5">5 Food Markets Around World</a>
-        <div class="hr_blog2"></div>
+      <div class="blog">
+        <img src="./images/food (1).jpg" alt="" class="img5" />
+        <a
+          href="#"
+          class="blog5"
+          >5 Food Markets Around World</a
+        >
+        <div class="hr_blog1"></div>
         <i class="fa-regular fa-message fa-sm">&nbsp;&nbsp;&nbsp;0</i>
       </div>
-      <div class="blog"><img src="./images/wallpaperflare.com_wallpaper (10).jpg" alt="" class="img6"><a href="#" class="blog6">Top Hikes in Australia</a>
-        <div class="hr_blog2"></div>
+      <div class="blog">
+        <img
+          src="./images/wallpaperflare.com_wallpaper (10).jpg"
+          alt=""
+          class="img6"
+        /><a href="#" class="blog6">Top Hikes in Australia</a>
+        <div class="hr_blog1"></div>
         <i class="fa-regular fa-message fa-sm">&nbsp;&nbsp;&nbsp;0</i>
       </div>
     </div>
-
-
 
     <div class="hero2">
-      <div class="info">13<div class="hero_info">Countries Visited</div></div>
-      <div class="info">7<div class="hero_info">Continent Visited</div></div>
-      <div class="info">8<div class="hero_info1"> Torn Pair of Shoes</div></div>
-      <div class="info">2<div class="hero_info">Lost Backpack</div></div>
+      <div class="info">
+        13
+        <div class="hero_info">Countries Visited</div>
+      </div>
+      <div class="info">
+        7
+        <div class="hero_info">Continent Visited</div>
+      </div>
+      <div class="info">
+        8
+        <div class="hero_info1">Torn Pair of Shoes</div>
+      </div>
+      <div class="info">
+        2
+        <div class="hero_info2">Lost Backpack</div>
+      </div>
     </div>
+
+    <div class="gallery_cont">
+      <div class="gallery gallery1"></div>
+      <div class="gallery gallery2"></div>
+      <div class="gallery gallery3"></div>
+      <div class="gallery gallery4"></div>
+      <div class="gallery gallery5"></div>
+      <div class="gallery gallery6"></div>
+    </div>
+    
+    <div class="gallery_cont2">
+      <div class="gallery gallery7"></div>
+      <div class="gallery gallery8"></div>
+      <div class="gallery gallery9"></div>
+      <div class="gallery gallery10"></div>
+      <div class="gallery gallery11"></div>
+      <div class="gallery gallery12"></div>
+    </div>
+
+    <div class="ld_btn"><button onclick="load()" class="g_btn">Load More</button></div>
+
+   
+<div class="footer-container">
+  <div class="footer-logo">Itravel<span>aLOt</span></div>
+
+  <div class="footer">
+    <ul class="footer-links">
+    <li><a href="./index.html">Home</a></li>
+    <li><a href="./blog.html">Blog</a></li>
+    <li><a href="./aboutme.html">About Me</a></li>
+    <li><a href="./contact.html">Contact</a></li>
+  </ul>
+ </div>
+
+  <div class="footer">       
+    <div class="footer-text">
+      <p>Subscribe here to get the latest travel tips and my insider secrets</p>
+    </div>
+    <div class="footer-email">
+        <input type="email" name="" id="" class="email" placeholder="Email">
+    </div>
+
+     <div class="footer-btn">
+      <button>Subscribe</button>
+     </div>
+     
+  </div>
+</div>
+
+</div>
 
 
 
 
     <script>
 
-      var ham = document.getElementById("ham")
-      var navbar2 = document.getElementById("navbar2")
-      var nav_links2 = document.getElementById("nav_links2")
-      var links2 = document.getElementById("links2")
-      
-      function myFunc(){
-        navbar2.classList.toggle("navbar navbar1")
+       window.onload = setTimeout(()=>{
+        
+        const show = document.querySelector(".hide-page");
+        const travel = document.querySelector(".loader1");
+
+        travel.classList.toggle("hide-loader");
+       
+        show.classList.toggle("show-page");
+       }, 5000);
+       
+       </script>
+
+
+
+
+    <script>
+      function toggleMenu() {
+        const menu = document.querySelector(".menu-links");
+        const icon = document.querySelector(".hamburger-icon");
+        menu.classList.toggle("open");
+        icon.classList.toggle("open");
       }
-     
 
 
+      function load(){
+       const gallery = document.querySelector(".gallery_cont2");
+       const btn = document.querySelector(".g_btn")
 
-    </script>
-    
+       gallery.classList.toggle("show");
+       btn.classList.toggle("hide");
+      }
+      </script>
+  
 
 
+<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+ 
   </body>
 </html>

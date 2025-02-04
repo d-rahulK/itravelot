@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About me</title>
+  <link rel="stylesheet" href="about.css" />
+
+
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">iTravel<span>aLOt</span></div> 
+    <div>
+      <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./aboutme.html">About Me</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav> 
+
+  <nav id="hamburger-nav">
+    <div class="logo">d_Rahul</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span class="span"></span>
+        <span class="span"></span>
+        <span class="span"></span>
+      </div>
+    </div>
+    <div class="menu-links">
+      <li><a href="./index.html" onclick="toggleMenu()">Home</a></li>
+        <li><a href="./blog.html"  onclick="toggleMenu()">Blog</a></li>
+        <li><a href="./aboutme.html"  onclick="toggleMenu()">About Me</a></li>
+        <li><a href="./contact.html"  onclick="toggleMenu()">Contact</a></li>
+    </div>
+  </nav>
+
+  
+  <h3>About Me</h3>
+
+  <div class="about">
+    <div class="about-txt">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dolore quis officia magnam provident aut, temporibus saepe amet nostrum porro minus.
+        <br>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque fugiat excepturi repudiandae tenetur dicta corporis, doloremque ad at incidunt </br>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, ad.
+     </p>
+     </div>
+    
+    <div class="about-img"><img src="./images/kid-luffy-monkey-d-luffy-one-piece-anime-hd-wallpaper-preview.jpg" alt=""></div>
+     </div>
+
+     <div class="about-gallery">
+      <img src="./images/blog-2.jpg" alt="">
+      <img src="./images/blog-3.jpg" alt="">
+      <img src="./images/blog-4.jpg" alt="">
+      <img src="./images/blog-5.jpg" alt="">
+      <img src="./images/blog-6.jpg" alt="">
+     </div>
+
+     
+     <div class="footer-container">
+      <div class="footer-logo">Itravel<span>aLOt</span></div>
+    
+      <div class="footer">
+        <ul class="footer-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./aboutme.html">About Me</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+     </div>
+    
+      <div class="footer">       
+        <div class="footer-text">
+          <p>Subscribe here to get the latest travel tips and my insider secrets</p>
+        </div>
+        <div class="footer-email">
+            <input type="email" name="" id="" class="email" placeholder="Email">
+        </div>
+    
+         <div class="footer-btn">
+          <button>Subscribe</button>
+         </div>
+         
+      </div>
+    </div>
+     
+  
+
+ 
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector(".menu-links");
+      const icon = document.querySelector(".hamburger-icon");
+      menu.classList.toggle("open");
+      icon.classList.toggle("open");
+    }
+
+
+
+
+    
+  </script>
+</body>
+
+</html>
